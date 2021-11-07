@@ -1,0 +1,184 @@
+.header{
+    display: flex;
+    background: #3888e7;
+position: relative;
+}
+
+.header-divs-section{
+    display: flex;
+    position: absolute;
+    background: aliceblue;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    height: 85%;
+    margin: auto;
+}
+
+.title-section{
+    padding: 10px;
+    font-size: 25px;
+    color: #dddddd;
+
+}
+
+.header-divs{
+    padding: 8px;
+    border-right: crimson 1px solid;
+cursor: pointer;
+}
+
+.main{
+    /*display: flex;*/
+    padding-top: 15px;
+}
+.main-left-section{
+    display: block;
+    padding-left: 15px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th{
+    background: crimson;
+    color: #dddddd;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+/*input fields*/
+.form__group {
+     position: relative;
+     padding: 15px 0 7px;
+     margin-top: 10px;
+     width: 100%;
+ }
+.form__field {
+    font-family: inherit;
+    width: 80%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 15px;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+}
+.form__field::placeholder {
+    color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+    cursor: text;
+    top: 20px;
+}
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 0.7rem;
+    color: #9b9b9b;
+}
+.form__field:focus {
+    padding-bottom: 6px;
+    /*font-weight: 700;*/
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 0.7rem;
+    color: #11998e;
+    font-weight: 700;
+}
+/* reset input */
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+
+.left-section-div-button{
+    margin: auto;
+    width: 52%;
+    border: 5px #ffffff solid ;
+    padding: 30px;
+
+}
+
+/*Buttons*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+span{
+    position: relative;
+    display: inline-flex;
+    width: 130px;
+    height: 45px;
+    margin: 0 5px;
+    perspective: 1000px;
+}
+span a{
+    font-size: 12px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+
+}
+span a:before,
+span a:after{
+    position: absolute;
+    /*content: "BUTTON";*/
+    height: 45px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+span a:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+#save:before, #save:after{
+    content: "SAVE";
+}
+#remove:before, #remove:after{
+    content: "REMOVE";
+}
+#update:before, #update:after{
+    content: "UPDATE";
+}
+#clearAll:before, #clearAll:after{
+    content: "CLEAR ALL";
+}
+#getAll:before, #getAll:after{
+    content: "GET ALL";
+}
+

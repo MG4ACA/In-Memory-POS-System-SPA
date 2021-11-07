@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>In-memory POS System</title>
+    <link href="assets/css/stylesheet.css" rel="stylesheet">
 </head>
 <body>
+<header class="header">
+    <section class="title-section">CUSTOMER MANAGE</section>
+    <section class="header-divs-section">
+        <div class="header-divs">HOME</div>
+        <div class="header-divs">CUSTOMER</div>
+        <div class="header-divs">ITEM</div>
+        <div class="header-divs">ORDERS</div>
+    </section>
+</header>
+<main class="main">
+    <section class="main-left-section">
+        <div style="font-size: 20px; margin: 15px 0; text-align: center">CUSTOMER REGISTRATION</div>
 
+
+        <div style="display: flex">
+            <div class="form__group field">
+                <input class="form__field" id='id' name="name" placeholder="CUSTOMER ID" required type="text"/>
+                <label class="form__label" for="id">CUSTOMER ID</label>
+            </div>
+            <div class="form__group field">
+                <input class="form__field" id="name" name="name" placeholder="CUSTOMER NAME" required type="text"/>
+                <label class="form__label" for="name">CUSTOMER NAME</label>
+            </div>
+        </div>
+        <div style="display: flex">
+            <div class="form__group field">
+                <input class="form__field" id="address" name="address" placeholder="CUSTOMER ADDRESS" required type="text"/>
+                <label class="form__label" for="address">CUSTOMER ADDRESS</label>
+            </div>
+            <div class="form__group field">
+                <input class="form__field" id="salary" name="name" placeholder="CUSTOMER SALARY" required type="text"/>
+                <label class="form__label" for="salary">CUSTOMER SALARY</label>
+            </div>
+
+        </div>
+
+
+        <div class="left-section-div-button">
+            <span><a id="save"></a></span>
+            <span><a id="remove"></a></span>
+            <span><a id="update"></a></span>
+            <span><a id="getAll"></a></span>
+            <span><a id="clearAll"></a></span>
+        </div>
+
+    </section>
+
+    <section class="main-right-section">
+        <table class="tbl">
+            <tr>
+                <th style="margin-right: 15px">CUSTOMER ID</th>
+                <th style="margin-right: 15px">CUSTOMER NAME</th>
+                <th style="margin-right: 15px">CUSTOMER ADDRESS</th>
+                <th style="margin-right: 15px">CUSTOMER SALARY</th>
+            </tr>
+            <tr>
+                <td>Alfreds</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+                <td>Germany</td>
+            </tr>
+
+        </table>
+    </section>
+</main>
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 </body>
 </html>
