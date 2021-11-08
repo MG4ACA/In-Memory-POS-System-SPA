@@ -16,6 +16,7 @@ position: relative;
 }
 
 .title-section{
+    display: none;
     padding: 10px;
     font-size: 25px;
     color: #dddddd;
@@ -29,8 +30,16 @@ cursor: pointer;
 }
 
 .main{
-    /*display: flex;*/
     padding-top: 15px;
+    display: none;
+
+}
+#home-main{
+    display: block;
+}
+
+#home-manage{
+    display: block;
 }
 .main-left-section{
     display: block;
@@ -166,6 +175,19 @@ span a:hover{
     transform: translateZ(-25px) rotateX(-90deg);
 }
 
+/*Home button set*/
+/*Customer crud button set*/
+#home-customer:before, #home-customer:after{
+    content: "CUSTOMER";
+}
+#home-item:before, #home-item:after{
+    content: "ITEM";
+}
+#home-order:before, #home-order:after{
+    content: "ORDER";
+}
+
+/*Customer crud button set*/
 #save:before, #save:after{
     content: "SAVE";
 }
@@ -181,4 +203,25 @@ span a:hover{
 #getAll:before, #getAll:after{
     content: "GET ALL";
 }
+
+/*Item crud button set*/
+#item-save:before, #item-save:after{
+    content: "SAVE";
+}
+#item-remove:before, #item-remove:after{
+    content: "REMOVE";
+}
+#item-update:before, #item-update:after{
+    content: "UPDATE";
+}
+#item-clearAll:before, #item-clearAll:after{
+    content: "CLEAR ALL";
+}
+#item-getAll:before, #item-getAll:after{
+    content: "GET ALL";
+}
+/*=================================================*/
+/*Home*/
+
+
 
