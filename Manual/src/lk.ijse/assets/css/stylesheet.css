@@ -124,7 +124,8 @@ tr:nth-child(even) {
 
 .left-section-div-button{
     margin: auto;
-    width: 52%;
+    text-align: center;
+    width: 100%;
     border: 5px #ffffff solid ;
     padding: 30px;
 
